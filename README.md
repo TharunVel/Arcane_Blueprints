@@ -1,4 +1,4 @@
-# DR Grading System 👁️
+# DR Grading System 
 
 > **Screening Support – Non-Diagnostic.** This tool assists trained healthcare workers in triage screening only. It does NOT replace clinical examination by a qualified ophthalmologist.
 
@@ -8,16 +8,15 @@ Built using a lightweight **EfficientNet-B0** model (16MB), achieving a Quadrati
 
 ---
 
-## 🚀 Setup & Installation
+## Setup & Installation
 
 The project runs locally and does not require a GPU. 
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YourUsername/Arcane_Blueprints.git
+git clone https://github.com/TharunVel/Arcane_Blueprints.git
 cd Arcane_Blueprints
 ```
-*(Make sure to replace `YourUsername/Arcane_Blueprints` with your actual repo link if someone is cloning it)*
 
 ### 2. Create a virtual environment
 It is recommended to use Conda to manage dependencies.
@@ -36,7 +35,7 @@ pip install pytorch-grad-cam faiss-cpu
 
 ---
 
-## 🖥️ How to Run
+## How to Run
 
 Once installed, simply run the Streamlit application from the project root folder:
 ```bash
@@ -46,7 +45,7 @@ The application will open automatically in your browser at `http://localhost:850
 
 ---
 
-## 🩺 Usage Guide
+## Usage Guide
 
 1. **New Patient Analysis (Tab 1):**
    - Enter the Patient ID, Name, and Age.
@@ -62,10 +61,3 @@ The application will open automatically in your browser at `http://localhost:850
 
 ---
 
-## 📁 Repository Structure
-- `app.py`: Main Streamlit web interface.
-- `inference.py`: PyTorch model inference, GradCAM attention bounding, and FAISS vector retrieval.
-- `image_checks.py`: Heuristics for image blur, brightness, and ophthalmoscope dark-border detection.
-- `database.py`: Local JSON state management for the patient registry.
-- `best_model_v2_qwk_0.8257_epoch12.pth`: The trained 16MB EfficientNet-B0 weights.
-- `faiss_index.bin` & `thumbnails/`: Vector database and images guiding the visually similar cases module.
