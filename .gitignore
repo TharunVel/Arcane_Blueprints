@@ -1,0 +1,30 @@
+# Model checkpoints
+*.pth
+
+# FAISS Indices
+*.bin
+
+# Datasets and images
+DR_Datasets/
+patient_images/
+patient_results/
+thumbnails/
+patients.json
+faiss_filenames.json
+
+# Environment / Cache
+__pycache__/
+.env
+.ipynb_checkpoints/
+arcane_env/
+env/
+venv/
+.venv/
+.pytest_cache/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Any random scripts
+create_ppt.py
